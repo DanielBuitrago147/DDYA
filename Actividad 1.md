@@ -3,7 +3,7 @@ def num():
     x=0
     y=0
     z=0
-    fibonacci=0
+    identy=0
     
     x = int(input("Ingrese numero: "))
     if x < 0:
@@ -13,12 +13,21 @@ def num():
     if x == 0:
         print("El num es cero")
 
-    if x%2 ==0:
+    if x > 1 and x%x == 0 and x%2 != 0 and x%3 != 0 and x%5 != 0 and x%7 != 0:
         print("Es un número primo")
     else:
         print("No es número primo")
 
-    fibonacci=("for i in range ((n1-1)+(n1-2):")
+    if x % 2 == 0:
+        print("El número es par")
+        p3 = x*x*x
+        print("El cubo del número es: ", p3)
+    else:
+        print("El número es impar")
+        p2 = x*x
+        print("El cuadrado del número es: ", p2)
+    
+
 
     y= int(input("Ingrese otro número: "))
     if y < 0:
@@ -28,27 +37,44 @@ def num():
     if y == 0:
         print("El num es cero")
 
-    if y%2 ==0:
+    if y > 1 and y%y == 0 and y%2 != 0 and y%3 != 0 and y%5 != 0 and y%7 != 0:
         print("Es un número primo")
     else:
         print("No es número primo")
 
-    if x > 0 or y > 0:
+    if y%2 == 0:
+        print("El número es par")
+        p3 = y*y*y
+        print("El cubo del número es: ", p3)
+    else:
+        print("El número es impar")
+        p2 = y*y
+        print("El cuadrado del número es: ", p2)
 
-        for i in range(x, y + 1):
-            z += i
-        print (z)
-        
+    if x > 0 and y > 0:
+        if x <= y:
+            for i in range(x, y + 1):
+                z += i
+        else:
+            for i in range(y, x + 1):
+                z += i
+        print("La suma es: ", z)
+
     if x < 0 and y < 0:
-        for i in range(x, y + 1):
-            z += i
-    if
-        
-        print(z)
+        multi = 1
+        if x <= y:
+            for i in range(x, y + 1):
+                multi *= i
+        else:
+            for i in range(y, x + 1):
+                multi *= i
+        print("La multiplicación es: ", multi)
 
-def fibonacci():
-    n=0
-    n=int(input("Ingrese numero: "))
-    
+    identy = input("Ingrese su carnet: ")
+
+    for digitos in identy:
+        print("El carnet es: ", digitos)
+
+
 
 num()
